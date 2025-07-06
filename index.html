@@ -10,28 +10,61 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
-        <h1>Header Content</h1>
+        <h1>WDD 131 – Dynamic Web Fundamentals – Marco Merizalde</h1>
         <nav class="main-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="https://www.linkedin.com/in/marco-merizalde-verduga-83879b133/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p6#p6" target="_blank">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Main Content</h1>
-    </main>
-    <aside>
-        <h2>Aside Content</h2>
-    </aside>
+    <div class="container">
+        <main>
+            <div class="about_me_content">
+                <h1>About Me</h1>
+                <div>
+                    <p>My name is Marco. I was born in Ecuador and live with my family in Quito (capital of Ecuador). At this time, I am seeking work, while also working starting on a project with electronics for the industry. I have a one child. I love learn about technology.</p>
+                    <img src="images/foto.jpg" alt="Me" class="profile-image">
+                </div>
+                <div class="country">
+                    <h2>Ecuador</h2>
+                    <div class="images">
+                        <img src="images/Ecuador.jpg" alt="Ecuador" class="ecuador-image">
+                        <p>Ecuador is a small country in the northwest of South America, bordered by Colombia, Peru, and the Pacific Ocean. Its capital city, Quito, is known for its well-preserved colonial architecture. The country is named after the equator, which runs through it, and its official language is Spanish, reflecting a rich mix of indigenous and mestizo cultures. Ecuador boasts diverse geography, including the Andes mountains, Amazon rainforest, Pacific coast, and the Galápagos Islands</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="aside-content">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+                    <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+                    <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a></li>
+                    <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                    <li><a href="https://www.coursera.org/" target="_blank">Coursera</a></li>
+                    <li><a href="https://www.edx.org/" target="_blank">edX</a></li>
+                    <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=AhAxLiGC7Pc" target="_blank">YouTube - ASP.Net Core</a></li>
+                    <li><a href="https://www.stackoverflow.com/" target="_blank">Stack Overflow</a></li>
+                    <li><a href="https://www.reddit.com/r/webdev/" target="_blank">Reddit Web Dev</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
     <footer>
-        <h2>Footer Content</h2>
+        <h2>© <span id="year"></span> 🚵‍♂️ Marco Merizalde 🚵 Ecuador</h2>
+        <h2><span id="lastmodified"></span></h2>
     </footer>
-
+    <script src="scripts/getdates.js"></script>
 </body>
 </html>
