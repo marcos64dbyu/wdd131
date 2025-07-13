@@ -1,0 +1,50 @@
+@media screen and (max-width: 900px) {
+    header {
+        display: flex;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header nav.show {
+        display: flex;
+    }
+
+    #toggle {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+        font-size: larger;
+    }
+
+    .active {
+        color: yellow;
+    }
+
+    footer {
+        position: fixed;
+        height: 6rem;
+        bottom: 0;
+        width: 100vw;
+    }
+    
+}

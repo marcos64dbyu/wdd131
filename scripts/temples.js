@@ -10,3 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
     lastModifiedEl.textContent = lastModifiedDate.toLocaleDateString(undefined, { dateStyle: "full" });
   }
 });
+
+const nav = document.querySelector("header nav");
+const toggleBtn = document.getElementById("toggle");
+
+if (nav && toggleBtn) {
+  toggleBtn.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+}
