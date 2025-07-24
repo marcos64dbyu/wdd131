@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Edu+AU+VIC+WA+NT+Guides:wght@200..400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@400..700&display=swap');
+
+:root {
+    --primary-color: #FFDD00;
+    --secondary-color: #024897;
+    --third-color: #ED1C24;
+    --general-color:#FA9F42;
+    --header-footer-font: 'ADLaM Display', cursive;
+    --body-font: 'DM Sans', sans-serif;
+    --text-color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.yellow {
+    background-color: var(--primary-color);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--header-footer-font);
+    font-size: 1.5rem;
+}
+
+.blue {
+    background-color: var(--secondary-color);
+    height: 20px;
+}
+
+.red {
+    background-color: var(--third-color);
+    height: 20px;
+}
+
+picture {
+  position: relative; /* necesario para posicionar hijos absolutos */
+}
+
+picture img {
+  width: 100%;
+  height: 730px;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;           /* cubrir el ancho completo */
+  height: 100%;          /* cubrir el alto completo */
+  background-color: rgba(0, 0, 0, 0.5); /* negro con 50% de opacidad */
+  pointer-events: none;  /* opcional: permite clics a través del overlay */
+}
+
+
+footer {
+    background-color: var(--general-color);
+    font-family: var(--header-footer-font);
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+}
