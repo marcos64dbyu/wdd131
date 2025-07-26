@@ -24,14 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const temperature = current.temperature_2m;
         const wind = current.windspeed_10m;
-        const windChill = current.apparent_temperature;
+        // const windChill = current.apparent_temperature;
+        const windChill = 13.12 + 0.6215 * temperature - 11.37 * Math.pow(wind, 0.16) + 0.3965 * temperature * Math.pow(wind, 0.16);
         const condition = mapWeatherCode(current.weathercode);
 
         weatherEl.innerHTML = `
           <strong>Temperature:</strong> ${temperature} °C<br>
           <strong>Conditions:</strong> ${condition}<br>
           <strong>Wind:</strong> ${wind} km/h<br>
-          <strong>Wind Chill:</strong> ${windChill} °C
+          <strong>Wind Chill:</strong> ${windChill.toFixed(2)} °C
         `;
       })
       .catch(error => {

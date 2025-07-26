@@ -86,6 +86,11 @@ aside div div h2 {
     width: 100%;
 }
 
+aside div div img {
+    visibility: visible;
+    width: 60px;
+}
+
 aside div div p {
     font-family: var(--body-font);
     font-size: 1rem;
