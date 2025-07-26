@@ -1,2 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@400..700&display=swap');
+
+:root {
+    --primary-color: #FFDD00;
+    --secondary-color: #024897;
+    --third-color: #ED1C24;
+    --general-color:#FA9F42;
+    --header-footer-font: 'ADLaM Display', cursive;
+    --body-font: 'DM Sans', sans-serif;
+    --text-color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.yellow {
+    background-color: var(--primary-color);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--header-footer-font);
+    font-size: 1.2rem;
+}
+
+.blue {
+    background-color: var(--secondary-color);
+    height: 15px;
+}
+
+.red {
+    background-color: var(--third-color);
+    height: 15px;
+}
+
+picture {
+  position: relative; 
+}
+
+picture img {
+  width: 100vw;
+  object-fit: cover;
+  filter: brightness(100%);
+}
+
+aside {
+    margin: 10px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+aside div {
+    border: 0.3px solid var(--text-color);
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+}
+
+aside div div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+aside div div h2 {
+    font-family: var(--header-footer-font);
+    border-radius: 10px 10px 0 0;
+    height: 40px;
+    margin: 0;
+    background-color: var(--general-color); 
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+aside div div p {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    color: var(--text-color);
+    padding: 20px;
+    width: 100%;
+}
+
+footer {
+    background-color: var(--general-color);
+    font-family: var(--header-footer-font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5rem;
+    padding: 1rem;
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+}
