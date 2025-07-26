@@ -38,24 +38,24 @@
 }
 
 picture {
-  position: relative; /* necesario para posicionar hijos absolutos */
+  position: relative; 
 }
 
 picture img {
   width: 100%;
-  height: 730px;
+  height: 100vh;
   object-fit: cover;
   filter: brightness(60%);
 }
 
 aside {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 30%;           /* cubrir el ancho completo */
-  height: 100%;          /* cubrir el alto completo */
-  background-color: rgba(0, 0, 0, 0.5); /* negro con 50% de opacidad */
-  pointer-events: none;  /* opcional: permite clics a través del overlay */
+  top: 120px;
+  right: 0;
+  width: 100%;           
+  height: 100%;          
+  background-color: rgba(0, 0, 0, 0.3); 
+  pointer-events: none;  
 }
 
 
