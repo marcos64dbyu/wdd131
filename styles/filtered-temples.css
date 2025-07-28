@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap');
+
+:root {
+    --header-footer-color: #660708;
+    --main-nav-color: #161a1d;
+    --temple-card-bg-color: #eeeeee;
+    --font-card-title: 'Playwrite AU QLD', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 10px;
+    text-align: center; 
+}
+
+header {
+    display: flex;
+    padding: 10px;
+    background-color: var(--header-footer-color);
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+header nav {
+    display: none;
+}
+
+header nav ul {
+    padding: 0;
+    font-size: 1rem;
+}
+
+header nav.show {
+    display: flex;
+}
+
+.res-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.res-grid img {
+    width: 100%;
+}
+
+.temple-card {
+    background-color: var(--temple-card-bg-color);
+    color: black;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    max-width: 300px;
+    text-align: center;
+}
+
+.temple-card h3 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.temple-card figcaption {
+    margin-bottom: 20px;
+}
+
+.temple-card figcaption p {
+    margin: 5px 0;
+}
+
+.temple-card img {
+    box-shadow: black 0px 2px 5px;
+}
+
+#title {
+  display: block;
+}
+
+#title.hide {
+  display: none;
+  width: 0;
+}
+
+#toggle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.active {
+    color: yellow;
+}
+
+.label {
+  font-family: var(--font-card-title);
+}
+
+footer {
+    background-color: var(--header-footer-color);
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+    padding: 0.5rem;
+}
