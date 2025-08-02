@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="A form for Product Review.">
+    <meta name="author" content="Marco Merizalde">
+    <link rel="stylesheet" href="styles/form.css" media="(min-width: 801px)">
+    <link rel="stylesheet" href="styles/form-mobile.css" media="(max-width: 800px)">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form type="submit" id="review-form" action="review.html" method="get">
+            <label for="product-name">Product Name:</label>
+            <select id="product-name" name="product-name" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <div>
+                    <div class="star-group">
+                        <label for="star1">&#9733;</label>
+                        <input type="radio" id="star1" name="review-rating" value="1" required>
+                    </div>
+                    <div class="star-group">
+                        <label for="star2">&#9733;&#9733;</label>
+                        <input type="radio" id="star2" name="review-rating" value="2">
+                    </div>
+                    <div class="star-group">
+                        <label for="star3">&#9733;&#9733;&#9733;</label>
+                        <input type="radio" id="star3" name="review-rating" value="3">
+                    </div>
+                    <div class="star-group">
+                        <label for="star4">&#9733;&#9733;&#9733;&#9733;</label>
+                        <input type="radio" id="star4" name="review-rating" value="4">
+                    </div>
+                    <div class="star-group">
+                        <label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                        <input type="radio" id="star5" name="review-rating" value="5">
+                    </div>
+                </div>
+            </fieldset>
+
+
+            <label for="date-of-installation">Date of Installation:</label>
+            <input type="date" id="date-of-installation" name="date-of-installation" required>
+
+            <fieldset>
+                <legend>Which features did you find useful in the product?<br>
+                    <em>(Check all that apply)</em>
+                </legend>
+
+                <label>
+                    <input type="checkbox" name="features" value="durability">
+                    Durability
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="features" value="ease-of-use">
+                    Ease of Use
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="features" value="performance">
+                    Performance
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="features" value="design">
+                    Design
+                </label>
+            </fieldset>
+
+            <label for="review-written">Written Review: <span class="optional">(optional)</span></label>
+            <textarea id="review-written" name="review-written" rows="4" cols="50" required></textarea>
+            
+            <label for="name">Your Name: <span class="optional">(optional)</span></label>
+            <input type="text" id="name" name="name">
+
+            <button type="submit">Post Review</button>
+
+        </form>
+    </main>
+    <footer>
+         <p>© <span id="year"></span>😊 Marco Merizalde - Ecuador 😊</p>
+        <p><span id="lastmodified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
