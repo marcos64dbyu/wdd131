@@ -2,7 +2,7 @@
     --general-font: "Libertinus Mono", monospace;
     --form-color: #fdf0d5;
     --header-footer-color: #660708;
-    --optional-color: #669bbc;
+    --optional-color: #12547D;
     --main-nav-color: #161a1d;
 }
 
@@ -20,6 +20,10 @@ label, legend {
 
 span.optional {
     color: var(--optional-color);
+}
+
+.checkbox-label span {
+    margin-left: 10px;
 }
 
 header {
@@ -56,9 +60,7 @@ form {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-.checkbox-label span {
-    margin-left: 10px;
-}
+
 
 select, input[type="text"], input[type="email"], textarea, input[type="date"] {
     padding: 10px;
