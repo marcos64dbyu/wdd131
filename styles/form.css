@@ -2,7 +2,7 @@
     --general-font: "Libertinus Mono", monospace;
     --form-color: #fdf0d5;
     --header-footer-color: #660708;
-    --optional-color: #669bbc;
+    --optional-color: #12547D;
     --main-nav-color: #161a1d;
 }
 
@@ -16,6 +16,10 @@ label, legend {
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
+}
+
+.checkbox-label span {
+    margin-left: 10px;
 }
 
 span.optional {

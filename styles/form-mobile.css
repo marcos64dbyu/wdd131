@@ -56,6 +56,10 @@ form {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
+.checkbox-label span {
+    margin-left: 10px;
+}
+
 select, input[type="text"], input[type="email"], textarea, input[type="date"] {
     padding: 10px;
     font-family: var(--general-font);
