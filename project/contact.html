@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurniCraft - Contact</title>
+    <meta name="description" content="Get in touch with FurniCraft.">
+    <meta name="author" content="Marco Merizalde">
+    <link rel="stylesheet" href="styles/base.css" media="(min-width: 801px)">
+    <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 800px)">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle"  hidden>
+        <div class="header-title">
+            <h1>FurniCraft</h1>
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="siteplan.html">Home</a></li>
+                <li><a href="siteplan.html#section2">Decor</a></li>
+                <li><a href="siteplan.html#section3">Kitchen</a></li>
+                <li><a href="siteplan.html#section4">Bedroom</a></li>
+                <li><a href="siteplan.html#section5">Living Room</a></li>
+                <li><a href="siteplan.html#section6">Bathroom</a></li>
+                <li><a href="design-tool.html">Design Tool</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons-header">
+            <img src="images/shopping_cart.svg" alt="shopping_cart" width="24" height="24" class="social-icon">
+            <img src="images/Facebook.svg" alt="Facebook" width="24" height="24" class="social-icon">
+            <img src="images/Twitter.svg" alt="Twitter" width="24" height="24" class="social-icon">
+            <img src="images/Instagram.svg" alt="Instagram" width="24" height="24" class="social-icon">
+        </div>
+    </header>
+    <main class="contact">
+        <section id="section8">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Whether you’re ready to start a custom project or just have a question, reach out to us anytime.</p>
+            <ul>
+            <li><strong>Email:</strong> <a href="mailto:support@furnicraft.com" class="link">support@furnicraft.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+1123xxxxxxx" class="link">+1 (123) xxx-xxxx</a></li>
+            <li><strong>Address:</strong> xxx xxxxx xxxx, FurniCity, FC 54321</li>
+            </ul>
+        </section>
+
+        <section id="contact-form">
+            <h3>Send Us a Message</h3>
+            <form  target="#contact-form" method="post">
+            <div>
+                <label for="name">Name: <span aria-hidden="true">(required)</span></label></div>
+                <input type="text" id="name" name="name" required placeholder="Your full name">
+            </div>
+
+            <div>
+                <label for="email">Email: <span aria-hidden="true">(required)</span></label></div>
+                <input type="email" id="email" name="email" required placeholder="you@example.com">
+            </div>
+
+            <div>
+                <label for="subject">Subject:</label></div>
+                <input type="text" id="subject" name="subject" placeholder="What’s this about?">
+            </div>
+
+            <div>
+                <label for="message">Message: <span aria-hidden="true">(required)</span></label></div>
+                <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Send Message</button>
+            </div>
+            </form>
+        </section>
+        </main>
+    <footer>
+        <h2>© <span id="year"></span>  Marco Merizalde -  Ecuador</h2>
+        <h2><span id="lastmodified"></span></h2>
+        <div class="social-icons-footer">
+                <img src="images/Facebook.svg" alt="Facebook" width="24" height="24" class="social-icon">
+                <img src="images/Twitter.svg" alt="Twitter" width="24" height="24" class="social-icon">
+                <img src="images/Instagram.svg" alt="Instagram" width="24" height="24" class="social-icon">
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>

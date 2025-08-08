@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurniCraft - Design Tool</title>
+    <meta name="description" content="A design tool for creating custom furniture.">
+    <meta name="author" content="Marco Merizalde">
+    <link rel="stylesheet" href="styles/base.css" media="(min-width: 801px)">
+    <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 800px)">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle"  hidden>
+        <div class="header-title">
+            <h1>FurniCraft</h1>
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="siteplan.html">Home</a></li>
+                <li><a href="siteplan.html#section2">Decor</a></li>
+                <li><a href="siteplan.html#section3">Kitchen</a></li>
+                <li><a href="siteplan.html#section4">Bedroom</a></li>
+                <li><a href="siteplan.html#section5">Living Room</a></li>
+                <li><a href="siteplan.html#section6">Bathroom</a></li>
+                <li><a href="design-tool.html">Design Tool</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons-header">
+            <img src="images/shopping_cart.svg" alt="shopping_cart" width="24" height="24" class="social-icon">
+            <img src="images/Facebook.svg" alt="Facebook" width="24" height="24" class="social-icon">
+            <img src="images/Twitter.svg" alt="Twitter" width="24" height="24" class="social-icon">
+            <img src="images/Instagram.svg" alt="Instagram" width="24" height="24" class="social-icon">
+        </div>
+    </header>
+    <main>
+        <section id="design-tool">
+            <h2>Design Tool</h2>
+            <p>Use our design tool to create custom furniture pieces that fit your style and space. Choose from a variety of materials, colors, and designs to bring your vision to life.</p>
+            <img src="images/design-tools.jpg" alt="Design Tool Image" width="100%" height="auto" class="design-tool-image">
+        </section>
+    </main>
+    <footer>
+        <h2>© <span id="year"></span>  Marco Merizalde -  Ecuador</h2>
+        <h2><span id="lastmodified"></span></h2>
+        <div class="social-icons-footer">
+                <img src="images/Facebook.svg" alt="Facebook" width="24" height="24" class="social-icon">
+                <img src="images/Twitter.svg" alt="Twitter" width="24" height="24" class="social-icon">
+                <img src="images/Instagram.svg" alt="Instagram" width="24" height="24" class="social-icon">
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
